@@ -1,0 +1,14 @@
+pipeline{
+    agent any 
+    stages{
+        stage("git hub"){
+            steps{
+                git credentialsId: 'dockerpassword0', url: 'https://github.com/moonabid/script.git'
+            }
+                
+            
+        }
+            
+        
+    }
+}
